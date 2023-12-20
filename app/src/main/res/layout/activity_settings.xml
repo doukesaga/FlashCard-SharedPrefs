@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/maincolor"
+    tools:context=".SettingsActivity">
+
+    <Switch
+        android:id="@+id/background_switch"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="167dp"
+        android:layout_marginBottom="28dp"
+        android:checked="false"
+        android:showText="true"
+        android:splitTrack="false"
+        android:text="Alternative Background"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:thumbTint="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/progress_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/return_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="172dp"
+        android:text="@string/return_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_switch" />
+
+    <Switch
+        android:id="@+id/progress_switch"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="204dp"
+        android:checked="false"
+        android:showText="true"
+        android:splitTrack="false"
+        android:text="Track Progress of Cards"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:thumbTint="#673AB7"
+        app:layout_constraintBottom_toTopOf="@+id/return_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_switch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
